@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PLEASE TOUCH ME"
+        android:textColor="#B02D58F3"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageView
+        android:id="@+id/imgRatingNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/normal" />
+
+    <ImageView
+        android:id="@+id/imgRatingSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="184dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgRatingNormal"
+        app:layout_constraintTop_toTopOf="@+id/imgRatingNormal"
+        app:srcCompat="@drawable/smile" />
+
+    <ImageView
+        android:id="@+id/imgRatingSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="476dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRatingSmile"
+        app:layout_constraintStart_toEndOf="@+id/imgRatingSmile"
+        app:layout_constraintTop_toTopOf="@+id/imgRatingSmile"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sad" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="238dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="152dp"
+        android:text="Finish"
+        android:background="@drawable/backgroup_button"
+        app:layout_constraintEnd_toEndOf="@+id/imgRatingNormal"
+        app:layout_constraintStart_toStartOf="@+id/imgRatingNormal"
+        app:layout_constraintTop_toBottomOf="@+id/imgRatingNormal" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="1275dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFinish"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="@+id/buttonFinish"
+        app:srcCompat="@drawable/intersect" />
+</androidx.constraintlayout.widget.ConstraintLayout>
